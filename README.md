@@ -1,2 +1,2 @@
-Source code for Katharina Schmid's personal website: https://kasaothaphie.github.io/ .
-The code is adapted from https://github.com/m-niemeyer/m-niemeyer.github.io .
+Source code for Katharina Schmid's personal website: https://kasothaphie.github.io/.  
+The code is adapted from https://github.com/m-niemeyer/m-niemeyer.github.io.
