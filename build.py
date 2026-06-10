@@ -1,4 +1,5 @@
 import codecs
+import latexcodec  # registers the 'ulatex' codec used by latex_to_unicode
 from pybtex.database.input import bibtex
 
 
@@ -40,9 +41,11 @@ def get_personal_data():
 
 def get_author_dict():
     return {
-        'Nicolas von Lützow': 'https://nicolasvonluetzow.github.io/',
+        'Angela Dai': 'https://www.3dunderstanding.org/',
+        'Barbara Rößle': 'https://niessnerlab.org/members/matthias_niessner/profile.html',
+        'Jozef Hladký': 'https://jozef.hladky.de/',
         'Matthias Nießner': 'https://niessnerlab.org/members/matthias_niessner/profile.html',
-        'Barbara Rößle': 'https://niessnerlab.org/members/matthias_niessner/profile.html'
+        'Nicolas von Lützow': 'https://nicolasvonluetzow.github.io/'
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Katharina Schmid', add_links=True):
