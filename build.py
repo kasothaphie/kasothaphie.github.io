@@ -140,7 +140,7 @@ def get_talks_html():
 
 def get_index_html():
     pub = get_publications_html()
-    # talks = get_talks_html()  # Talks section disabled — re-enable here and below to restore
+    talks = get_talks_html()
     name, bio_text, footer = get_personal_data()
     s = f"""
     <!doctype html>
@@ -183,14 +183,12 @@ def get_index_html():
                         {pub}
                     </div>
                 </div>
-                <!-- Talks section disabled — to restore, uncomment the get_talks_html() call above and remove the doubled braces around the talks placeholder below
                 <div class="row" style="margin-top: 3em;">
                     <div class="col-sm-12" style="">
                         <h4>Talks</h4>
-                        {{talks}}
+                        {talks}
                     </div>
                 </div>
-                -->
                 <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
                     {footer}
                 </div>
